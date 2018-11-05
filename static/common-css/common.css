@@ -1,0 +1,468 @@
+/*
+ * CSS Reset start
+ * */
+[v-cloak] {
+  display: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  font-family: 'Microsoft Yahei', 'SimHei', 'SimSun';
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*ios点击闪烁*/
+  /*word-break: break-all;*/
+  /*強制按字母换行*/
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  /*display: block;*/
+}
+a, a:hover, a:active, a:visited, a:link, a:focus { /* 去掉a标签的背景 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+.aHover:hover{
+  color: #2681FE !important;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+img {
+  border: 0;
+}
+img[src=""] {
+  /*Img标签src为空的时候的样式设置*/
+  display: none;
+}
+button, input, select, textarea {
+  font-family: 'Microsoft YaHei';
+  word-break: break-all;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  /*清除苹果input默认样式*/
+  border-radius: 0;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+textarea {
+  resize: none;
+}
+s, i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+.oneLine { /*一行超出部分隱藏實現三個點*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.twoLine { /*兩行超出部分隱藏實現三個點*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.threeLine { /*三行超出部分隱藏實現三個點*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.XYcenter { /*垂直水平居中*/
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.textBetween { /*文字两端对齐中间自动分配*/
+  text-align: justify;
+}
+.textBetween:after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+}
+.onePXborder:after{/*1px边框*/
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #e5e6e7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleY(0.5);
+}
+
+/*CSS Reset end*/
+
+/*背景*/
+.backF{background: #fff}
+.back20{background: #20252b}/*登录主题黑色*/
+.back24{background: #242A2E}/*左侧导航栏背景底色*/
+.back2D{background: #2D3439}/*左侧导航栏背景色*/
+.back37{background: #373737;}/*黑色背景*/
+.backF7{background: #f7f7f7}/*灰色背景*/
+.back16{background: #0076BE}/*主题浅蓝色*/
+.back14{background: #0072b8}/*主题深蓝色*/
+.back26{background: #2681FE !important;}/*主题深蓝色*/
+/*字体大小*/
+/*.size10{font-size: 10px}*/
+.size12{font-size: 12px}
+.size14{font-size: 14px}
+.size16{font-size: 16px}
+.size18{font-size: 18px}
+.size20{font-size: 20px}
+.size38{font-size: 38px}    /*图片上传框 + 号*/
+
+
+/*颜色*/
+.colorF{color: #fff}
+.color33{color: #333}
+.color66{color: #666}
+.color47{color: #474747}
+.colorBB{color: #BBBBBB}
+.colorG{color: #2BA345}
+.colorW{color: #EF8C17}
+.colorR{color: #FD483F}
+.color26{color: #2681FE;}
+/*宽度*/
+.width60{width: 60px}
+.width70{width: 70px}
+.width90{width: 90px}
+.width120{width: 120px}
+.width210{width: 210px}
+.width320{width: 320px}
+.width615{width: 615px}
+/*分割线*/
+/*灰色分割线*/
+.borderTopF2 {
+  border-top: 1px solid #efefef;
+}
+.borderBottF2 {
+  border-bottom: 1px solid #efefef;
+}
+/*主题色边框*/
+.borderTheme{
+  border: 1px solid #2681fe;
+}
+/*左侧主题色分割线*/
+.infoTit {
+  border-left: 2px solid #2681fe;
+  padding-left: 14px;
+  margin: 12px 0;
+}
+/*padding   10边距*/
+.paddLR26{padding: 0 26px}
+.paddTop10{padding-top: 10px}
+.paddBott10{padding-bottom: 10px}
+.paddLeft10{padding-left: 10px}
+.paddRight10{padding-right: 10px}
+.paddRight12{padding-right: 12px}
+.paddLeft14{padding-left: 14px}
+.paddT10R121B10L121{padding: 10px 121px 10px 121px }
+/*margin   10边距*/
+.marTop10{margin-top: 10px !important;}
+.marTop40{margin-top: 40px !important;}
+.marBott10{margin-bottom: 10px !important;}
+.marBott15{margin-bottom: 15px !important;}
+.marBott20{margin-bottom: 20px !important;}
+.marLeft10{margin-left: 10px !important;}
+.marRight10{margin-right: 10px !important;}
+.marRight12{margin-right: 12px !important;}
+
+/*对齐方式*/
+.textLeft{text-align: left}
+.textRight{text-align: right}
+.textCenter{text-align: center}
+.marginAuto{margin: auto}
+
+/*其他*/
+.fontB{font-weight: bold}
+.clearF{clear: both}
+.app{width: 100%;}
+.minWidth{
+  min-width: 1200px;
+}
+.pointer{
+  cursor: pointer;
+}
+
+/*筛选条件搜索按钮宽度90*/
+.butt_search_W{
+  width: 90px;
+}
+
+/*隐藏表格第一栏数据（只显示复选框）*/
+.checkbox .el-checkbox span:nth-of-type(2){
+  display: none!important;
+}
+/*表单之间的间距*/
+.el-form-item {
+  /*margin-bottom: 15px !important;*/
+}
+/*表单错误提示*/
+.el-form-item__error {
+  padding-top: 0px;
+  -webkit-transform:scale(0.9);
+}
+
+/*placeholder字体大小*/
+.el-range-input,.el-input__inner {
+  font-size: 12px !important;
+}
+
+/*首字缩进*/
+.indent2em{
+  text-indent: 2em;
+}
+/*左侧导航点击背景颜色*/
+.is-Leftactive{
+  outline: 0;
+  background-color: #1fc2dd !important;
+}
+/*三级导航点击背景颜色*/
+.isNavActive{
+  outline: 0;
+  background-color: #fff;
+}
+.isNavActive span{
+  color: #2681FE;
+}
+.el-menu-item:hover, .el-menu-item:focus {
+  outline: none;
+  background-color: #fff;
+}
+/*表格头部颜色以及背景色*/
+.el-table__header-wrapper th{
+  color: #333 !important;
+  background-color: #EAEDF1 !important;
+}
+.el-table__header-wrapper{
+  color: #333 !important;
+  background-color: #EAEDF1 !important;
+}
+/*滑块开关字体颜色*/
+.el-switch__label *{
+  font-size: 12px;
+}
+/*表单左侧label的字体大小*/
+.el-form-item__label,.el-checkbox__label{
+  font-size: 12px;
+}
+/*表单单选框字体大小*/
+.el-radio .el-radio__label{
+  font-size: 12px;
+}
+/*表单Cascader 级联选择器字体大小*/
+.el-cascader .el-cascader__label{
+  font-size: 12px;
+}
+/*Tabs 标签页字体大小*/
+.el-tabs__nav .el-tabs__item{
+  font-size: 12px;
+}
+.el-radio-button .el-radio-button__inner{
+  font-size: 12px;
+  padding: 8px 15px;
+}
+/*设置引用现有产品组件el-radio label隐藏  不印象其他页面 请放心 */
+.quoteExitingProduct table td .el-radio__label{
+  display: none;
+}
+
+
+
+/*整体架构布局*/
+.vh100{
+  height: 100vh;
+  overflow-y: hidden;
+}
+.boxAllCont{
+  width: 100%;
+  position: relative;
+  flex: 1;
+  min-width: 1000px;
+}
+.height100{
+  height: 100%;
+}
+.boxAll{
+  width: 100%;
+  min-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+/*中间内容模块宽高*/
+.box{
+  width: 100%;
+  height: 100%;
+  padding:0 26px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.boxIfarmNp{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+/*滚动条整体样式*/
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+/*圆角*/
+.Border-R5{
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  /*滑道*/
+  /*-webkit-box-shadow: inset 0 0 6px rgba(187, 187, 187,0.5);*/
+  -webkit-box-shadow: inset 0 0 6px rgba(102, 102, 102,0.5);
+  /*-webkit-box-shadow: inset 0 0 6px red;*/
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
+  /*background: rgba(187, 187, 187,0.3);*/
+  background: rgba(102, 102, 102,0.3);
+  /*background: red;*/
+  /*-webkit-box-shadow: inset 0 0 6px rgba(38, 129, 254,0.5);*/
+  /*-webkit-box-shadow: inset 0 0 6px rgba(38, 129, 254,0.5);*/
+}
+::-webkit-scrollbar-thumb:hover {
+  /*background: rgba(187, 187, 187,0.5);*/
+  /*background: rgba(187, 187, 187,0.5);*/
+  background: rgba(102, 102, 102,0.5);
+}
+
+
+/*个人中心弹窗*/
+.userBoxTip,.userBoxTip1{
+  background: #20252b !important;
+  border-color: #20252b !important;
+  padding:0;
+  margin-top: 5px;
+}
+.userBoxTip .popper__arrow::after,.userBoxTip1 .popper__arrow::after{
+  border-bottom-color:#20252b !important;
+  margin-left: -7px !important;
+  width: 2px !important;
+  top: 0 !important;
+}
+/*消息列表标记去掉边框*/
+.tipsBadge .el-badge__content{
+  border: none !important;
+  margin-top: 5px;
+}
+.tipsBadge img:focus,.tipsBadge sup:focus{
+  border: none;
+  outline-color:#373737;
+}
+
+/*iframe边框*/
+iframe{
+  border: none;
+}
+/*进度条*/
+.progressXQ{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 4px;
+  display: none;
+  background-color:#1fc2dd;
+}
+.progressXQ::-webkit-progress-bar
+{
+  background-color:#d7d7d7;
+}
+.progressXQ::-webkit-progress-value{
+  background-color:#1fc2dd;
+  /*background: linear-gradient(to right, blue ,limegreen); !* 标准的语法 *!*/
+}
+/*错误弹窗*/
+.messageErr{
+  top: 73px;
+}
+.messageErr i{
+  font-size: 30px;
+}
+.messageErr p{
+  font-size: 18px;
+}
+/*消息中心左侧下拉*/
+.tipsAllBox .el-menu-item-group__title{
+  padding: 0 !important;
+}
+.tableEmp .el-badge__content.is-fixed.is-dot{
+  top: 4px;
+  right: -2px;
+}
+.el-collapse-item__content{
+  padding-bottom: 15px;
+}
+/*隐藏表格第一栏数据（只显示复选框）*/
+.checkbox .el-checkbox span:nth-of-type(2){
+  display: none!important;
+}
+.color26 .el-breadcrumb__inner{
+  color: #2681FE
+}
+.color33 .el-breadcrumb__inner{
+  color: #333
+}
+
+/* el 弹窗标题调整 */
+.el-dialog__header {
+  border-bottom: 1px solid #cfcfcf;
+  padding: 10px 20px;
+}
+.el-dialog__header .el-dialog__headerbtn {
+  top: 11px;
+}
+.el-dialog__title {
+  font-size:14px;
+}
+
+/* 分页下拉框图标调整 */
+.el-select .el-input .el-select__caret {
+  line-height:28px;
+}
+/*产品编辑相关页面富文本输入框最小高度控制*/
+.textarea .ql-container .ql-editor{
+  min-height: 247px!important;
+  max-height: 300px!important;
+  overflow: auto;
+}
